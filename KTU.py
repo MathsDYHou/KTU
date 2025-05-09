@@ -39,7 +39,6 @@ class KMOAnalyzerApp:
         self.results={}
         self.create_widgets()
     def _on_canvas_resize(self,event):
-        """处理画布尺寸变化"""
         canvas_width=event.width
         self.canvas.itemconfigure("frame",width=canvas_width)
     def _bind_mousewheel(self):
